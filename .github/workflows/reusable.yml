@@ -1,0 +1,8 @@
+name: Reusable Workflow
+on: workflow_call
+jobs: 
+  information:
+    runs-on: macos-latest
+    steps: 
+      - name: Output information
+        run: echo "Deploying & uploading"
