@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-color: #798080;
+  background-color: #e5e8e8;
   color: #292d2d;
   text-align: center;
 }
@@ -15,13 +15,11 @@ body {
 #logo-img {
   width: 7rem;
   height: 7rem;
-  background-color: #3f3828;
-  border-radius: 50%;
+
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  border: 4px solid #292d2d;
 }
 
 header img {
@@ -43,9 +41,17 @@ main {
 button {
   font: inherit;
   cursor: pointer;
-  background-color: #f8bd47;
-  color: #292d2d;
+  background-color: #d8a9eb;
+  color: #080545;
   padding: 0.25rem 1rem;
   border-radius: 4px;
   border: 1px solid #f8bd47;
+}
+
+link {
+  color: white;
+}
+
+link:visited {
+  color: white;
 }
