@@ -7,7 +7,7 @@ jobs:
   assign-label:
     permissions:
       issues: write
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: Assign label
         if: contains(github.event.issue.title, 'bug')
