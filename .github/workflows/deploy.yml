@@ -19,6 +19,11 @@ jobs:
       - name: Lint code
         run: npm run lint
   test:
+    environment: testing
+    env:
+      MONGODB_CLUSTER_ADDRESS: clusterone.ws3hnzu.mongodb.net
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
     runs-on: ubuntu-latest
     steps:
       - name: Get code
