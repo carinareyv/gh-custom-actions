@@ -5,7 +5,7 @@ on:
       - master
 jobs:
   lint:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: Get code
         uses: actions/checkout@v3
@@ -19,7 +19,7 @@ jobs:
       - name: Lint code
         run: npm run lint
   test:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: Get code
         uses: actions/checkout@v3
@@ -36,7 +36,7 @@ jobs:
           path: test.json
   build:
     needs: test
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: Get code
         uses: actions/checkout@v3
@@ -54,7 +54,7 @@ jobs:
       id-token: write
       contents: read
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: Get code
         uses: actions/checkout@v3
