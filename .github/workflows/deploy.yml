@@ -49,6 +49,7 @@ jobs:
         with:
           name: dist-files
           path: dist
+ 
   deploy:
     permissions:
       id-token: write
@@ -80,4 +81,7 @@ jobs:
       - name: Output information
         run: |
           echo "Live URL: ${{ steps.deploy.outputs.website-url }}"
+  reuse:
+    needs: deploy
+    uses: ./.github/workflows/reusable.yml
   
